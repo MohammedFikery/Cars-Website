@@ -1,0 +1,29 @@
+<div class="container pt-5 text-center">
+
+  <h2 class="my-5">Most popular cars rental deals</h2>
+
+  <div class="row my-5">
+    <div class="col-md-6 col-lg-3 mb-4" *ngFor="let car of listOfCars">
+      <div class="card shadow-sm border-0 h-100">
+        <img src="../../assets/images/image 12.svg" class="card-img-top" alt="Jaguar" />
+        <div class="card-body">
+          <h5 class="card-title">{{car.car_model}}</h5>
+          <p class="mb-2 text-muted">
+            <i class="fas fa-star text-warning"></i> <strong>4.8</strong> {{car.car_vin}}
+          </p>
+          <ul class="list-unstyled small mb-3">
+            <li><i class="fas fa-calendar me-2"></i>{{car.car_model_year}}</li>
+            <li><i class="fas fa-palette me-2"></i>{{car.car_color}}</li>
+          </ul>
+          <div class="mb-3">
+            <h5><strong>Price:{{car.price}}</strong><small class="text-muted"> /day</small></h5>
+          </div>
+          <a  class="btn btn-primary w-100">
+            Rent Now <i class="fas fa-arrow-right ms-2"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>

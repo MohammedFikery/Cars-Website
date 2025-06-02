@@ -1,0 +1,47 @@
+<div class="container pt-5 text-center">
+<!-- component.html -->
+<div class="position-relative w-75 mx-auto">
+  <input
+    type="search"
+    class="form-control ps-5"
+    placeholder="Search By Name"
+    [(ngModel)]="carNAme"
+  (keydown.enter)="searchByName()"
+  />
+  <span class="position-absolute top-50 start-0 translate-middle-y ps-3 text-muted">
+    <i class="fas fa-search"></i>
+  </span>
+</div>
+
+
+
+
+
+  <h2 class="my-5">Most popular cars rental deals</h2>
+
+  <div class="row my-5">
+    <div class="col-md-6 col-lg-3 mb-4" *ngFor="let car of listOfCars |slice :0:4">
+      <div class="card shadow-sm border-0 h-100">
+        <img src="../../assets/images/image 12.svg" class="card-img-top" alt="Jaguar" />
+        <div class="card-body">
+          <h5 class="card-title">car_Name:{{car.car}}</h5>
+          <h5 class="card-title">car_model:{{car.car_model}}</h5>
+          <p class="mb-2 text-muted">
+            <i class="fas fa-star text-warning"></i> <strong>4.8</strong> {{car.availability}}
+          </p>
+          <ul class="list-unstyled small mb-3">
+            <li><i class="fas fa-calendar me-2"></i>car_model_year:{{car.car_model_year}}</li>
+            <li><i class="fas fa-palette me-2"></i>car_color:{{car.car_color}}</li>
+          </ul>
+          <div class="mb-3">
+            <h5><strong>Price:{{car.price}}</strong><small class="text-muted"> /day</small></h5>
+          </div>
+          <a [routerLink]="['/carDetails',car.id]" class="btn btn-primary w-100">  Rent Now <i class="fas fa-arrow-right ms-2"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+      <button routerLink="/allCars" class="btn btn-outline-primary" type="button">Show all vehicles</button>
+
+</div>

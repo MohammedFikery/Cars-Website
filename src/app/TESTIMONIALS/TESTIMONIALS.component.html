@@ -1,0 +1,92 @@
+<div class="container pt-5 text-center">
+  <p class="mt-5 d-inline-block p-2 px-5 rounded-2">TESTIMONIALS</p>
+  <h2>What peole say about us?</h2>
+</div>
+<div class="mb-5">
+  <owl-carousel-o [options]="customOptions">
+    <ng-container>
+      <ng-template carouselSlide>
+        <div class="car-card">
+          <div class="row w-50 mx-auto align-items-center shadow-sm">
+            <div class="col-md-6 p-0">
+              <img src="../../assets/images/Rectangle 8.svg" class="w-100 h-100" alt="" />
+            </div>
+            <div class="col-md-6 bg-body">
+              <h2>5.0 stars</h2>
+              <span *ngFor="let star of [].constructor(5)">
+                <i class="fa-solid fa-star text-warning"></i>
+              </span>
+              <h4 class="lead pb-5">
+                “I feel very secure when using caretall's services. Your
+                customer care team is very enthusiastic and the driver is always
+                on time.”
+              </h4>
+              <h3>Charlie Johnson</h3>
+              <h6>From New York, US</h6>
+            </div>
+          </div>
+        </div>
+      </ng-template>
+      <ng-template carouselSlide>
+        <div class="car-card">
+          <div class="row w-50 mx-auto align-items-center shadow-sm">
+            <div class="col-md-6 p-0">
+              <img src="../../assets/images/Rectangle 8.svg" class="w-100 h-100" alt="" />
+            </div>
+            <div class="col-md-6 bg-body">
+              <h2>5.0 stars</h2>
+              <span *ngFor="let star of [].constructor(5)">
+                <i class="fa-solid fa-star text-warning"></i>
+              </span>
+              <h4 class="lead pb-5">
+                “I feel very secure when using caretall's services. Your
+                customer care team is very enthusiastic and the driver is always
+                on time.”
+              </h4>
+              <h3>Charlie Johnson</h3>
+              <h6>From New York, US</h6>
+            </div>
+          </div>
+        </div>
+      </ng-template>
+    </ng-container>
+  </owl-carousel-o>
+</div>
+
+<div class="bg-main ">
+  <div class="row align-items-center h-100 w-100 m-0">
+    <div class="col-md-6 p-0 ps-5">
+      <div class="ms-5">
+        <div >
+          <h3 class="h1">Download Rentcars App for <span>FREE</span></h3>
+          <h5>For faster, easier booking and exclusive deals.</h5>
+          <div class="d-flex justify-content-start align-items-center gap-3">
+            <a href=""><img src="../../assets/images/btn1.svg" alt="" /></a>
+            <a href=""><img src="../../assets/images/btn2.svg" alt="" /></a>
+          </div>
+
+        </div>
+        <div class="w-50 ">
+          <div class="my-3  ">
+            <input type="text" class="form-control formstyle" id="exampleFormControlInput1" placeholder="Name" />
+          </div>
+          <div class="my-3 ">
+            <input type="tel" class="form-control formstyle" id="exampleFormControlInput1" placeholder="PhoneNumber" />
+          </div>
+          <div class="my-3 ">
+            <input type="email" class="form-control formstyle" id="exampleFormControlInput1" placeholder="Email" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6 ">
+      <div class="d-flex justify-content-center align-items-center  flex-column m-auto">
+        <div class=" FotterImage  p-5 pb-0 ">
+          <img src="../../assets/images/iPhone 14 Pro Space Black Mockup label.svg" class="w-100 p-0" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<app-Fotter></app-Fotter>

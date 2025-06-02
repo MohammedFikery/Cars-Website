@@ -1,0 +1,38 @@
+:root {
+  --mainColour: #1572d3;
+  --mainfont: #1572D3;
+  --bg-main:#1572D31A;
+
+}
+
+
+.btn-maim{
+    background-color: var(--mainColour);
+    color: white;
+
+}
+a{
+    text-decoration: none;
+    color: black;
+     font-family: "Poppins", sans-serif;
+     font-weight: 500;
+}
+h1{
+  font-family: "Poppins", sans-serif;
+  font-size: 48Px;
+  font-weight: 600;
+}
+p{
+  font-family: "Poppins", sans-serif;
+}
+.car-card {
+  padding: 10px;
+  text-align: center;
+}
+
+.car-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: contain;
+  border-radius: 10px;
+}
